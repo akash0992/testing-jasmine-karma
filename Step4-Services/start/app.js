@@ -1,5 +1,5 @@
 var app = angular.module('KarmaTest', []);
-app.controller('Home', ["$scope", "$http", "Users", function ($scope, $http, Users) {
+app.controller('Home', ["$scope", "$http", "UsersService", function ($scope, $http, UsersService) {
     var Home = this;
     Home.userInfo = {
         name: "deepak",
@@ -8,7 +8,7 @@ app.controller('Home', ["$scope", "$http", "Users", function ($scope, $http, Use
     }
     Home.users = [];
     Home.init = function () {
-        Users.then(function (resopnse) {
+        UsersService.list().then(function (resopnse) {
             $scope.$evalAsync(function () {
                 Home.users = resopnse.data;
                 console.log(Home.users)
@@ -23,9 +23,8 @@ app.controller('Home', ["$scope", "$http", "Users", function ($scope, $http, Use
         }, 1000)
     }
 
-}]).service('Users', function ($http) {
-    this.list = function (number) {
-        return $http
-            .get("http://localhost:8089/users");
+}]).service('UsersService', function ($http) {
+    this.list = function () {
+        return $http.get("http://localhost:8089/users");
     }
 });
