@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="app.js"></script>
+<style>
+    .table > thead > tr > th {
+        text-align: center;
+    }
+</style>
+<body ng-app="KarmaTest">
+<div class="container" ng-controller="Home as Home" data-ng-init="Home.init()">
+    <div class="col-lg-12" style="text-align:center">
+        <div><i class="glyphicon glyphicon-user" style="font-size:55px;"></i></div>
+        <h3>{{Home.userInfo.name}}</h3>
+        <h4>I'm {{Home.userInfo.age}}year old.</h4>
+
+        <p>
+            'and it is true :-D
+        </p>
+    </div>
+    <div class="col-lg-12" style="text-align:center">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th width="33.33%">Name</th>
+                <th width="33.33%">Age</th>
+                <th width="33.33%">Salary</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr data-ng-repeat="user in Home.users">
+                <td class="active">{{user.name}}</td>
+                <td class="success">{{user.age}}</td>
+                <td class="warning">{{user.salary}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

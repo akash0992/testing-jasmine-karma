@@ -1,0 +1,23 @@
+{
+  "name": "testing-angular",
+  "version": "1.0.0",
+  "description": "\"Testing with angularjs\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony app.js",
+    "server":""
+  },
+  "keywords": [
+    "angularjs",
+    "karma",
+    "jasmine"
+  ],
+  "author": "deepak.m.shrma@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.8.0",
+    "koa-router": "^5.1.2",
+    "lodash": "^3.10.0"
+  }
+}

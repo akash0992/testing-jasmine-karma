@@ -1,0 +1,29 @@
+{
+  "name": "testing-angular",
+  "version": "0.0.0",
+  "authors": [
+    "deepakshrma <deepak.m.shrma@gmail.com>"
+  ],
+  "description": "\"Angularjs testing\"",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "\"angularjs",
+    "testing",
+    "karma",
+    "jasmine\""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.2",
+    "angular-mocks": "~1.4.2"
+  }
+}

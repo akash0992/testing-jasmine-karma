@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "name": "Deepak",
+      "age": 25,
+      "salary": 5000
+    },
+    {
+      "name": "Deepak2",
+      "age": 23,
+      "salary": 5023
+    },
+    {
+      "name": "Deepak3",
+      "age": 21,
+      "salary": 5021
+    }
+  ]
+}
