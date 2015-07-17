@@ -9,9 +9,6 @@ $ npm install karma-jasmine --save-dev
 ```
 ```bash
 $ bower install angular angular-mocks
-$ karma init
-$ npm install --save-dev karma karma-mocha karma-chai karma-phantomjs-launcher
-$ npm install karma-jasmine --save-dev
 ```
 
 #Default Karma.conf.js
